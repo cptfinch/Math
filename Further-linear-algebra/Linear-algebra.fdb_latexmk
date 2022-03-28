@@ -1,0 +1,19 @@
+# Fdb version 3
+["pdflatex"] 1643845890 "/home/cfinch/git/Math/Further-linear-algebra/Linear-algebra.tex" "/home/cfinch/git/Math/Further-linear-algebra/Linear-algebra.pdf" "Linear-algebra" 1643845890
+  "/etc/texmf/web2c/texmf.cnf" 1641012357 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/cfinch/git/Math/Further-linear-algebra/Linear-algebra.aux" 1643845890 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/home/cfinch/git/Math/Further-linear-algebra/Linear-algebra.tex" 1643845859 83 1d060e12a77bc2712f7ed54718a3bd76 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def" 1580854751 25404 9d60f463a00d154207ec0048dee27cf0 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1641012469 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1641012615 8255453 a368792cd7cb17cc008f5d071b40f7a4 ""
+  "Linear-algebra.aux" 0 -1 0 "pdflatex"
+  "Linear-algebra.tex" 1643845859 83 1d060e12a77bc2712f7ed54718a3bd76 ""
+  (generated)
+  "/home/cfinch/git/Math/Further-linear-algebra/Linear-algebra.pdf"
+  "/home/cfinch/git/Math/Further-linear-algebra/Linear-algebra.log"
+  "Linear-algebra.log"
+  "Linear-algebra.aux"
+  "Linear-algebra.pdf"

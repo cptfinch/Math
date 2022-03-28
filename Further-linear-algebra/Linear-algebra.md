@@ -40,10 +40,6 @@ then $\{b+a_1,a_2,a_3\}$ is also a basis a for $\mathbb{R}^3$.
 (xvi) Given any two bases of \mathbb{R}^n there is an isomorphism from \mathbb{R}^n to itself that that maps one basis onto the other. 
 
 
-
-
-# Lang  
-
 ## corollary 3.5
 
 Let V be a vector space and let $W$ be a subspace.  If $dim W = dim V$ then $V = W$
@@ -77,4 +73,9 @@ $$ \newtheorem{thm}{Theorem} $$
 
 $F$ is a field
 
-Vector space over $F$
+Vector space over $F$:
+- additive abelian group V
+- action of F on V :  $(\lambda,x) \mapsto \lambda x$ 
+
+
+

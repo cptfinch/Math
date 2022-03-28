@@ -1,0 +1,110 @@
+\documentclass{article}
+\usepackage[left=3cm,right=3cm,top=0cm,bottom=2cm]{geometry} % page settings
+\usepackage{amsmath} % provides many mathematical environments & tools
+\usepackage{amssymb} % see https://www.overleaf.com/learn/latex/Mathematical_fonts
+\newtheorem{thm}{Theorem}  % see http://web.mit.edu/rsi/www/pdfs/theorems.pdf
+
+\begin{document}
+
+\title{A quantified Tauberian theorem for sequences}
+\author{C Finch}
+\date{\today}
+\maketitle
+
+\begin{abstract}
+  The main result of this paper is a quantified version of Ingham's Tauberian theorem for bounded vector-valued sequences rather than functions. It gives an estimate on the rate of decay of such a sequence in terms of the behaviour of a certain boundary function, with the quality of the estimate depending on the degree of smoothness this boundary function is assumed to possess. The result is then used to give a new proof of the quantified Katznelson-Tzafriri theorem recently obtained in 21.   
+\end{abstract}
+
+
+\section{Introduction}
+One of the cornerstones in the asymptotic theory of operators is the Katznelson-Tzafriri theorem [13], theorem 1 , which states the following . 
+
+\begin{thm}
+  Let X be a complex Banach space and suppose that $T\in \mathcal{B}(X)$ is power bounded. Then 
+  \begin{equation} \label{eq1}
+    \lim_{n \to \infty} \left\Vert T^n (I-T) \right\Vert =0
+  \end{equation}
+  if and only if $\sigma(T) \cup \mathbb{T} \subset \{1\}. $
+\end{thm}
+
+Here $\mathcal{B}$ deontes the algebra of bounded linear operators on a complex Banach space X, $\sigma(T)$ deontes the spectrum of the operator $T \in \mathcal{B}(X)$ , and an operator $T \in \mathcal{B}(X)$ is said to be power-bounded if $\sup_{n\geq 0}< \infty$. 
+Moreover, $\mathbb{T}$ stands for the unit circle $\{\lambda \in \mathbb{C} : |\lambda | =1 \}$.
+
+Limits of the type appearing in \ref{eq1} play an important role for instance in the theory of iterative methods (see 16), so it is natural to ask at what \textit{speed} convergence takes place. 
+If $\sigma(T)\cup\mathbb{T}= \emptyset$ the decay is at least exponential, with the rate determined by the spectral radius of $T$, so the real interest is in the non-trivial case where $\sigma(T)\cap\mathbb{T}= \{1\}$.
+
+
+Given a continuous non-increasing function 
+$m : (0,\pi] \to [1,\infty )$ 
+such that $\left\Vert R(\mathrm{e}^{i\theta}, T) \right\Vert \leq m(|\theta\|)$ 
+for $0 < |\theta| \leq \pi$  , 
+it is shown in 21 , Theorem 2.11, that , 
+for any $c \in (0,1)$, 
+$\left\Vert (T^n (I-T)) \right\Vert = O(m_\mathrm{log}^{-1}(cn)), n \to \infty $
+where $m_\mathrm{log}^{-1}$ is the inverse function of the map $m_{\mathrm{log}}$ defined by 
+\begin{equation}
+  m_{\mathrm{log}}(\epsilon) = m(\epsilon) \mathrm{log} \left(1+ \frac{m(\epsilon)}{\epsilon} \right) , 0<\epsilon \leq \pi , 
+\end{equation}
+
+
+
+
+
+
+$AX=\lambda X$
+
+$v_1 \begin{bmatrix}
+  3\\3\\6\\2
+\end{bmatrix}
++
+v_2 \begin{bmatrix}
+  1\\1\\1\\2
+\end{bmatrix}
+= 0
+$
+
+
+
+
+
+
+
+\subsection*{Lab activity 1.2.4}
+Find the difference quotient of $f(x)$ when $f(x)=x^3$.
+
+We proceed as demonstrated in the lab manual; assuming that $h\ne 0$ 
+we have
+\begin{align*}
+    \frac{f(x+h)-f(x)}{h} & =  \frac{(x+h)^3-x^3}{h}   \\
+                          & =  \frac{x^3+3x^2h+3xh^2+h^3 - x^3}{h}\\
+                          & =  \frac{3x^2h+2xh^2+h^3}{h}\\
+                          & =  \frac{h(3x^2+2xh+h^2)}{h}\\
+                          & =  3x^2+2xh+h^2
+\end{align*} 
+
+\subsection*{Lab activity 2.3.4}
+Use the definition of the derivative to find $f'(x)$ when $f(x)=x^{\frac{1}{4}}$.
+
+Using the definition of the derivative, we have
+\begin{align*}
+            f'(x)           &= \lim_{h\rightarrow 0}\frac{(x+h)^{1/4}-x^{1/4}}{h}   \\
+                            &=  \lim_{h\rightarrow 0}\frac{(x+h)^{1/4}-x^{1/4}}{h}\cdot \frac{((x+h)^{1/4}+x^{1/4})((x+h)^{1/2}+x^{1/2})}{((x+h)^{1/4}+x^{1/4})((x+h)^{1/2}+x^{1/2})}\\
+                            &=  \lim_{h\rightarrow 0}\frac{(x+h)-x}{h((x+h)^{1/4}+x^{1/4})((x+h)^{1/2}+x^{1/2})}    \\  
+                            &=  \lim_{h\rightarrow 0}\frac{1}{((x+h)^{1/4}+x^{1/4})((x+h)^{1/2}+x^{1/2})}   \\
+                            &= \frac{1}{(x^{1/4}+x^{1/4})(x^{1/2}+x^{1/2})} \\
+                            &=  \frac{1}{(2x^{1/4})(2x^{1/2})}  \\
+                            &=  \frac{1}{4x^{3/4}}  \\
+                            &=  \frac{1}{4}x^{-3/4}
+\end{align*}
+Note: the key observation here is that
+\begin{align*}
+    a^4-b^4 &= (a^2-b^2)(a^2+b^2)   \\
+        &= (a-b)(a+b)(a^2+b^2), 
+\end{align*}
+with 
+\[
+    a = (x+h)^{1/4}, \qquad b = x^{1/4},
+\]
+which allowed us to rationalize the denominator.
+
+\end{document}
